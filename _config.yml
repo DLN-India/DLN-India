@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: D
+middle_name: L.
+last_name: Narasimhan
+email: narasimhandl@gmail.com # your email address
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -262,140 +262,217 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
+  display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------
+  # Jekyll Scholar
+  # -----------------------------------------------------------------------------
 
-scholar:
+  scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+    last_name: [Einstein]
+    first_name: [Albert, A.]
 
-  style: apa
-  locale: en
+    style: apa
+    locale: en
 
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [latex, smallcaps, superscript]
+    source: /_bibliography/
+    bibliography: papers.bib
+    bibliography_template: bib
+    # Note: if you have latex math in your bibtex, the latex filter
+    # preprocessing may conflict with MathJAX if the latter is enabled.
+    # See https://github.com/alshedivat/al-folio/issues/357.
+    bibtex_filters: [latex, smallcaps, superscript]
 
-  replace_strings: true
-  join_strings: true
+    replace_strings: true
+    join_strings: true
 
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
+    details_dir: bibliography
+    details_layout: bibtex.html
+    details_link: Details
 
-  query: "@*"
+    query: "@*"
 
-badges: # Display different badges for your publications
-  altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
+  badges: # Display different badges for your publications
+    altmetric_badge: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+    dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
-# Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
+  # Filter out certain bibtex entry keywords used internally from the bib output
+  filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
 
-# Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3  # leave blank to always show all authors
-more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
-
-
-# -----------------------------------------------------------------------------
-# Jekyll Link Attributes
-# -----------------------------------------------------------------------------
-
-# These are the defaults
-external_links:
-  enabled: true
-  rel: external nofollow noopener
-  target: _blank
-  exclude:
+  # Maximum number of authors to be shown for each publication (more authors are visible on click)
+  max_author_limit: 3  # leave blank to always show all authors
+  more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
 
 
-# -----------------------------------------------------------------------------
-# Responsive WebP Images
-# -----------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------
+  # Jekyll Link Attributes
+  # -----------------------------------------------------------------------------
 
-imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
-  widths:
-    - 480
-    - 800
-    - 1400
-  input_directories:
-    - assets/img/
-  input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-  output_formats:
-    webp: "-resize 800x"
-
-# -----------------------------------------------------------------------------
-# Jekyll Diagrams
-# -----------------------------------------------------------------------------
-
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
+  # These are the defaults
+  external_links:
+    enabled: true
+    rel: external nofollow noopener
+    target: _blank
+    exclude:
 
 
-# -----------------------------------------------------------------------------
-# Optional Features
-# -----------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------
+  # Responsive WebP Images
+  # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
-enable_panelbear_analytics: false  # enables panelbear analytics
-enable_google_verification: false  # enables google site verification
-enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arrangement
-enable_math:                true   # enables math typesetting (uses MathJax)
-enable_tooltips:            false  # enables automatic tooltip links generated
-                                   # for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
-enable_navbar_social:       false  # enables displaying social links in the
-                                   # navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into
-                                   # multiple categories
-enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
-enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+  imagemagick:
+    enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+    widths:
+      - 480
+      - 800
+      - 1400
+    input_directories:
+      - assets/img/
+    input_formats:
+      - ".jpg"
+      - ".jpeg"
+      - ".png"
+      - ".tiff"
+    output_formats:
+      webp: "-resize 800x"
 
-# -----------------------------------------------------------------------------
-# Library versions
-# -----------------------------------------------------------------------------
+  # -----------------------------------------------------------------------------
+  # Jekyll Diagrams
+  # -----------------------------------------------------------------------------
 
-academicons:
-  version: "1.9.1"
-  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
-bootstrap:
-  version: "4.6.1"
-  integrity:
-    css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
-    js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
-bootstrap-table:
-  version: "1.21.4"
-fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
-jquery:
-  version: "3.6.0"
-  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-mathjax:
-  version: "3.2.0"
-masonry:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
-mdb:
-  version: "4.20.0"
-  integrity:
-    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
-    js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
-medium_zoom:
-  version: "1.0.8"
-  integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
+  jekyll-diagrams:
+      # configuration, see https://github.com/zhustec/jekyll-diagrams.
+      # feel free to comment out this section if not using jekyll diagrams.
+
+
+  # -----------------------------------------------------------------------------
+  # Optional Features
+  # -----------------------------------------------------------------------------
+
+  enable_google_analytics:    false  # enables google analytics
+  enable_panelbear_analytics: false  # enables panelbear analytics
+  enable_google_verification: false  # enables google site verification
+  enable_bing_verification:   false  # enables bing site verification
+  enable_masonry:             true   # enables automatic project cards arrangement
+  enable_math:                true   # enables math typesetting (uses MathJax)
+  enable_tooltips:            false  # enables automatic tooltip links generated
+                                     # for each section titles on pages and posts
+  enable_darkmode:            true   # enables switching between light/dark modes
+  enable_navbar_social:       false  # enables displaying social links in the
+                                     # navbar on the about page
+  enable_project_categories:  true   # enables categorization of projects into
+                                     # multiple categories
+  enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+  enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
+
+  # -----------------------------------------------------------------------------
+  # Library versions
+  # -----------------------------------------------------------------------------
+
+  academicons:
+    version: "1.9.1"
+    integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+  bootstrap:
+    version: "4.6.1"
+    integrity:
+      css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
+      js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
+  bootstrap-table:
+    version: "1.21.4"
+  fontawesome:
+    version: "5.15.4"
+    integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  jquery:
+    version: "3.6.0"
+    integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  mathjax:
+    version: "3.2.0"
+  masonry:
+    version: "4.2.2"
+    integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+  mdb:
+    version: "4.20.0"
+    integrity:
+      css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+      js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+  medium_zoom:
+    version: "1.0.8"
+    integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
+
+  # -----------------------------------------------------------------------------
+  # Developer Skills
+  # -----------------------------------------------------------------------------
+
+  profile:
+    - C#
+    - SQL
+    - ReSharper
+    - ASP.NET Web API
+    - ASP.NET Core
+    - Microsoft Azure
+    - SQL
+    - Azure Cosmos DB
+    - Visio
+    - GraphQL
+    - Xamarin
+    - git
+    - Application Performance Management
+    - Azure App Service
+    - Azure SQL DB
+    - AKS
+    - ACI
+    - Docker
+    - K8s
+    - Azure DevOps
+    - Azure Service Bus
+    - Azure IoT Hub
+    - Azure Event Hub
+    - Azure Data Studio
+    - Azure OMS
+    - Azure App Insights
+    - Azure Cost Management and Optimization
+    - ADLS
+    - Blob Storage
+    - WCF Services
+    - Digital Transformation
+    - IT Strategy
+    - Edge computing
+    - IoT
+    - Hybrid Cloud
+
+  # -----------------------------------------------------------------------------
+  # Work Experience
+  # -----------------------------------------------------------------------------
+
+  work_experience:
+    - company: Siemens Gamesa
+      role: Technical Architect
+      location: Bangalore, India
+      duration: 01/2020 - Present
+      description: Development of the client-server database application for Digital Transformation Use Cases. Communication with the Customer, coordination of the project team. Ensuring the deployment of high-quality deliverables to the client environment. Mentoring junior consultants, training of clients and internal staff. Providing technical architecture expertise and solution design guidance. Working with stakeholders to define requirements, deliverables, milestones and SOW. Responsible for microservice migration & Containerization of application into AKS, K8s. Creating and documenting the architecture Document records for every technical decision taken. (graphviz) Programming and developing the new solution ground up on ASP.NET Core Web API & Azure SQL DB Backend. Responsible for merging code changes by team members onto azure Devops and work updating on Devops boards/sprints. Periodically refactored and ensured good code quality, through peer-review and feedback-based Optimization. Writing technical documents in Wiki pages (Azure Dev ops) Writing code in .NET Core along with Azure components like Service bus, logic apps, function app etc. Security implementation for front-end and backend using Microsoft AD app registration and token based authentication for inter applications communication. Deployment through Azure pipelines - CI/CD Application integration of data science, front end (React) and back end (.net core)
+    - company: Dell Technologies
+      role: Principal Software Engineer
+      location: Bangalore, India
+      duration: 02/2019 - 08/2019
+      description: Worked for Dell through NexiiLabs. Responsible for .NET to .NET Core Migration of Web Applications & API. Creating and Validating Specifications of REST APIs for Internal use. Documenting the Specifications and Systems in place in a Class 2 application. Developed on Entity Framework, MongoDB and GraphQL for a Pilot PoC Effort.
+    - company: Lagerinn Dutch Holding
+      role: .Net Developer LDH
+      location: Bangalore, India, Netherlands
+      duration: 07/2017 - 11/2018
+      description: Team India, Maintained & supported this application, while re-engineering it into a new Web-Based Solution. Team Size : 7 Members. Role : .Net Developer LDH. Technologies Used : Winforms, EF, SQL Server 2012, C#.NET, REST API(thru ASP.NET Web API), git, VS 2017, Resharper, NDepend, Angular, IIS7, Swaggerhub, invisionapp, axosoft.com. Supporting a Traditional Winforms .NET on C#, SQL Server & Entity Framework Application. Creating the architecture of newer Products & Solutions using Visio & Word. Creating Front end workflows & client-side validations using invisionapp.com 's tooling. Fixing issues & taking up work items tracked using jysk.axosoft.com 's Agile Task Management tool. Migration and Modernization of ASP.NET Web API to .NET Core & Azure SQL DB Backend
+    - company: Infosys
+      role: Technology Lead
+      location: Bangalore, India
+      duration: 06/2015 - 12/2016
+      description: Worked in the Energy domain on data services for reservoir engineering. Application maintenance and support for a customer defined plugin, we provided application maintenance support for a large maintenance contract. Engineering and maintaining 2 different plugins on Reservoir engineering and Surveys. Involved in communicating and planning via a portal from TFS within and across teams. Developing with C# (5.0) on .Net (4.5.2) maintaining data on flat file data stores with the team and fixing issues working closely with US/Indian Client counterparts providing application support. Periodically refactored and ensured good code quality, through peer-review and feedback based Optimization. Responsible for merging code changes by team members onto TFS and work updating on internal portals. Involved in Trainings and Learning Program as a moderator for Angular v1.4.7
+    - company: Indecomm Global Services
+      role: Senior Software Engineer
+      location: Western Europe, Belgium
+      duration: 03/2012 - 10/2014
+      description: Working from our Client Location - GentBelgium, our team helped our Wolters Kluwer Financial Services, a major software player in Regulatory-Compliance Software market; re-engineer a data-intensive system into the latest Frameworks, re-engineering and Improving Code Quality. Module: Asset and Liability Management creating a robust risk management solution on C#.NET, MS SQL Server for by merging two duplicated code bases, performing Code Improvement & Solution Integration. SQL, C#.NET Developer. (Lead Consultant). Refactored aligning with CI on C#.NET and T-SQL translating core functionality to Domain Services in phases. Developed & Implemented Business & Functional requirements on SQL Server 2012 and C#.Net. Responsible for Design and development of High quality code and Introduction of optimizations. Followed a strict agile practice, and involved in Design/conception stages of Integration with SOA. Involved in de-coupling by migration of 2-tier applications to 3-tier solutions with services implemented by cross functional teams abstracting the Database and Specific redundant Product level functions. Involved in communicating and planning via a portal from JIRA within and across teams. Involved in maintenance and resolution of issues in cross functional project team and fix issues working closely with the application support. Periodically refactored and ensured good code quality, through peer-review and feedback based Optimization. Followed and implemented high level design considerations as proposed by the Architecture planning (PAB) and steering committee discussions-decisions. Strong collaborator, always going that extra mile to ensure, complete understanding and transparency.
+    - company: Thomson Reuters
+      role: Software Engineer
+      location: Bangalore, India
+      duration: 11/2010 - 01/2012
+      description: Core Infrastructure Products and related Services for Portfolio Analytics and Storage. Module: Portfolio Warehouse (A large scale system facilitating clients to upload their portfolios & other financial data). Developed & Implemented Sharing of Portfolios to dynamically changing user groups and hierarchies. Developed & Integrated Caching for a particular type of Portfolio's which enhanced Speed of request. Involved in planning for fixes & Enhancements, regular release cycles, and Agile Processes & Scrum meetings. Interacted and facilitated in Scheduled maintenance activities, Regular deployment, packaging and other delivery needs. Involved in proposing patches, implementing bug fixes, enhancements & performance optimizations. Interacted with teams across the globe, understanding and helping them out with Portfolio Information. Empowered Thomson Reuters' flagship products, Eikon and Thomson One, with Valuable Portfolio Data.
