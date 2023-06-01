@@ -451,7 +451,4 @@ jekyll-archives:
       location: Bangalore, India
       duration: 01/2020 - Present
       description: Development of the client-server database application for Digital Transformation Use Cases. Communication with the Customer, coordination of the project team. Ensuring the deployment of high-quality deliverables to the client environment. Mentoring junior consultants, training of clients and internal staff. Providing technical architecture expertise and solution design guidance. Working with stakeholders to define requirements, deliverables, milestones and SOW. Responsible for microservice migration & Containerization of application into AKS, K8s. Creating and documenting the architecture Document records for every technical decision taken. (graphviz) Programming and developing the new solution ground up on ASP.NET Core Web API & Azure SQL DB Backend. Responsible for merging code changes by team members onto azure Devops and work updating on Devops boards/sprints. Periodically refactored and ensured good code quality, through peer-review and feedback-based Optimization. Writing technical documents in Wiki pages (Azure Dev ops) Writing code in .NET Core along with Azure components like Service bus, logic apps, function app etc. Security implementation for front-end and backend using Microsoft AD app registration and token based authentication for inter applications communication. Deployment through Azure pipelines - CI/CD Application integration of data science, front end (React) and back end (.net core)
-    ---
-    layout: page
-    title: My Work Experience
-    ---
+    
