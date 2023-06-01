@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dln-india.github.io/al-folio/sitemap.xml
+Sitemap: https://dln-india.github.io/sitemap.xml
