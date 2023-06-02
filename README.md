@@ -12,9 +12,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio)
 [![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
 
-[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Image Version](https://img.shields.io/docker/v/narasimhandl3/dln-india?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/narasimhandl3/dln-india)
+[![Docker Image Size](https://img.shields.io/docker/image-size/narasimhandl3/dln-india?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/narasimhandl3/dln-india)
+[![Docker Pulls](https://img.shields.io/docker/pulls/narasimhandl3/dln-india?color=blueviolet)](https://hub.docker.com/r/narasimhandl3/dln-india)
 
 A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics.
 If you like the theme, give it a star!
